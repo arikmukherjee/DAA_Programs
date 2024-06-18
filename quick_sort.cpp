@@ -1,4 +1,5 @@
-#include <stdio.h>  
+#include <iostream>
+using namespace std;
   
 // Function to swap two elements  
 void swap(int* a, int* b) {  
@@ -31,7 +32,7 @@ void quickSort(int arr[], int low, int high) {
 void printArray(int arr[], int size) {  
     int i;  
     for (i = 0; i < size; i++)  
-        printf("%d ", arr[i]);  
+        cout<<" "<<arr[i];  
     printf("\n");  
 }  
   
@@ -39,7 +40,7 @@ int main() {
     int arr[] = { 12, 17, 6, 25, 1, 5 };  
     int n = sizeof(arr) / sizeof(arr[0]);  
     quickSort(arr, 0, n - 1);  
-    printf("Sorted array: \n");  
+    cout<<"Sorted array: \n";  
     printArray(arr, n);  
     return 0;  
 }
